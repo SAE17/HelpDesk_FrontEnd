@@ -1,0 +1,85 @@
+[
+  {
+    "id": "a7df27be-2817-4263-a844-3ae840817080",
+    "username": "sae170595",
+    "first_name": "Akmal",
+    "last_name": "Shaimardonov",
+    "phone_number": "934509939",
+    "email": "a.shaimardonov@qpay.tj",
+    "groups": [
+      {
+        "id": 1,
+        "title": "Администраторы"
+      },
+      {
+        "id": 3,
+        "title": "Агенты"
+      },
+      {
+        "id": 4,
+        "title": "Клиенты"
+      }
+    ]
+  },
+  {
+    "id": "33712360-47af-47da-956a-1310db98951e",
+    "username": "timnazar",
+    "first_name": "Tim",
+    "last_name": "Nazar",
+    "phone_number": "935881101",
+    "email": "timnazar@payvand.tj"
+  },
+  {
+    "id": "f15d8d87-d7c6-45ff-be86-46d8faa0ab4f",
+    "username": "hanpetu",
+    "first_name": "Petu",
+    "last_name": "Han",
+    "phone_number": "89898",
+    "email": "rew",
+    "groups": [
+      {
+        "id": 1,
+        "title": "Администраторы"
+      },
+      {
+        "id": 3,
+        "title": "Агенты"
+      },
+      {
+        "id": 4,
+        "title": "Клиенты"
+      }
+    ]
+  },
+  {
+    "id": "b35c5eb7-23a3-4d0c-9104-df2229116695",
+    "username": "zveropolic",
+    "first_name": "Lis",
+    "last_name": "Zayc",
+    "phone_number": "9345",
+    "email": "Хорькович@люк",
+    "groups": [
+      {
+        "id": 1,
+        "title": "Администраторы"
+      },
+      {
+        "id": 3,
+        "title": "Агенты"
+      },
+      {
+        "id": 4,
+        "title": "Клиенты"
+      }
+    ]
+  },
+
+  {
+    "id": "2ff3437d-0e42-45ff-8348-ea16df4efb2b",
+    "username": "petu",
+    "first_name": "Petu",
+    "last_name": "Han",
+    "phone_number": "6868",
+    "email": "t@"
+  }
+]

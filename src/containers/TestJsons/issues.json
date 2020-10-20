@@ -1,0 +1,1636 @@
+[
+  {
+    "id": 85,
+    "created_at": "2020-02-12 07:06:57+00",
+    "updated_at": "2020-02-12 07:06:57+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      },
+      {
+        "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+        "first_name": "S_A_E",
+        "last_name": "Chappie"
+      },
+      {
+        "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+        "first_name": "S_A_E",
+        "last_name": "Chappie"
+      },
+      {
+        "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+        "first_name": "S_A_E",
+        "last_name": "Chappie"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c670617d-2277-4632-ae57-93e1a6c1a5eb",
+        "key": "nepravilnyi_nomer",
+        "name": "Неправильный номер",
+        "value": "934509939"
+      },
+      {
+        "id": "93201889-1919-4014-a64c-5bff3a91942c",
+        "key": "pravilnyi_nomer",
+        "name": "Правильный номер",
+        "value": "938425742"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "created_at": "2020-02-12 07:06:56+00",
+    "updated_at": "2020-02-12 07:06:56+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+
+    "claims": [
+      {
+        "id": "ffb4255a-564f-4f07-9b0f-5b1c2074a62f",
+        "key": "nepravilnyi_nomer",
+        "name": "Неправильный номер",
+        "value": "934509939"
+      },
+      {
+        "id": "ab63e11e-4a1b-4d3a-ac54-535d89500ff4",
+        "key": "pravilnyi_nomer",
+        "name": "Правильный номер",
+        "value": "938425742"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "created_at": "2020-02-12 07:06:56+00",
+    "updated_at": "2020-02-12 07:06:56+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "7bc70b66-8e5c-4fa3-ad32-f133e9bdf7d6",
+        "key": "nepravilnyi_nomer",
+        "name": "Неправильный номер",
+        "value": "934509939"
+      },
+      {
+        "id": "121f3d56-8975-46f4-997e-ebc8557d5610",
+        "key": "pravilnyi_nomer",
+        "name": "Правильный номер",
+        "value": "938425742"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "created_at": "2020-02-12 07:06:40+00",
+    "updated_at": "2020-02-12 07:06:40+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "06657bf9-21f2-4cd7-ba04-1fde3ac77bd1",
+        "key": "nepravilnyi_nomer",
+        "name": "Неправильный номер",
+        "value": "934509939"
+      },
+      {
+        "id": "828373c3-ad4e-4c70-a2aa-b5caa5d3ceb7",
+        "key": "pravilnyi_nomer",
+        "name": "Правильный номер",
+        "value": "938425742"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "created_at": "2020-02-12 06:40:39+00",
+    "updated_at": "2020-02-12 06:40:39+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "7cc5685a-182c-4809-8d07-1e99c11879de",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "d2e06281-107b-4e41-b405-aaa76b05b14e",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "created_at": "2020-02-10 12:58:45+00",
+    "updated_at": "2020-02-10 12:58:45+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "ea52b7d6-ddc4-454b-9f32-8acd1e1dab9f",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "46135aa3-19b3-4736-b3a4-585771932d6d",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "created_at": "2020-02-10 12:58:43+00",
+    "updated_at": "2020-02-10 12:58:43+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "26e34b42-a52c-4140-ac5c-761be011a686",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "cb36bf47-e368-4113-bd99-310df1512177",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "created_at": "2020-02-10 12:58:42+00",
+    "updated_at": "2020-02-10 12:58:42+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "b50a6946-1c6d-4d47-9d9e-d6f93cf29b9e",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "87b7c3b9-0e05-4fc5-933a-4cd757d37230",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "created_at": "2020-02-10 12:58:42+00",
+    "updated_at": "2020-02-10 12:58:42+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "2444c509-71c7-4b91-b96d-3f775a0f9bab",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "a3a7031e-81d4-4f31-93cb-98a93f43f34e",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "created_at": "2020-02-10 12:57:56+00",
+    "updated_at": "2020-02-10 12:57:56+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "vghjkl тикет",
+    "description": "Описание ко hgjkl тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      },
+      {
+        "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+        "first_name": "Parvin",
+        "last_name": "Davlatzoda"
+      }
+    ],
+    "claims": [
+      {
+        "id": "47d11b55-cd39-4711-84a8-289812343a7e",
+        "key": "keshkod",
+        "name": "Кэшкод",
+        "value": "рмкщ8н67"
+      },
+      {
+        "id": "e1c3914d-a3b4-4887-a60a-b98dcd14ddb1",
+        "key": "pidorasina",
+        "name": "пидорасина",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "created_at": "2020-02-10 12:21:03+00",
+    "updated_at": "2020-02-10 12:21:03+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      },
+      {
+        "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+        "first_name": "Parvin",
+        "last_name": "Davlatzoda"
+      },
+      {
+        "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+        "first_name": "S_A_E",
+        "last_name": "Chappie"
+      }
+    ],
+    "claims": [
+      {
+        "id": "82a059a9-b3c3-4708-97db-172866866032",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "934509939"
+      },
+      {
+        "id": "58c40688-0b42-4d3d-a976-de171e60bc16",
+        "key": "karahanidy",
+        "name": "караханиды",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "created_at": "2020-02-10 12:19:59+00",
+    "updated_at": "2020-02-10 12:19:59+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "3327ede1-c794-4a1f-88d9-4146215959b8",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "created_at": "2020-02-10 12:19:58+00",
+    "updated_at": "2020-02-10 12:19:58+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "d376e05e-ab6e-4a0f-b6ba-a1da2a553804",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "created_at": "2020-02-10 12:19:49+00",
+    "updated_at": "2020-02-10 12:19:49+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "44b06d7f-5c69-47db-9433-14190bbef631",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "created_at": "2020-02-10 12:17:43+00",
+    "updated_at": "2020-02-10 12:17:43+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "1c4513b8-d29b-4a29-9b93-d8262253850a",
+        "key": "dratuti",
+        "name": "Дратути",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "created_at": "2020-02-10 12:16:33+00",
+    "updated_at": "2020-02-10 12:16:33+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "01b638af-e7ca-4bc4-b943-8889bc40d199",
+        "key": "halk",
+        "name": "934509939",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "created_at": "2020-02-10 12:12:30+00",
+    "updated_at": "2020-02-10 12:12:30+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "28534e78-3933-4c1b-8a4d-bbfe8a4eb81f",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "934509939"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "created_at": "2020-02-10 12:11:13+00",
+    "updated_at": "2020-02-10 12:11:13+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "4f2d78b4-3596-4c48-b8ad-8a89c9d2c544",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "918116943"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "created_at": "2020-02-10 12:09:32+00",
+    "updated_at": "2020-02-10 12:09:32+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      },
+      {
+        "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+        "first_name": "Parvin",
+        "last_name": "Davlatzoda"
+      }
+    ],
+    "claims": [
+      {
+        "id": "21bdb94f-8b4d-48b4-a20b-be2480bdf4e6",
+        "key": "shara",
+        "name": "Шар",
+        "value": "918116943"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "created_at": "2020-02-10 12:08:14+00",
+    "updated_at": "2020-02-10 12:08:14+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "created_at": "2020-02-10 12:06:54+00",
+    "updated_at": "2020-02-10 12:06:54+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "created_at": "2020-02-10 12:06:23+00",
+    "updated_at": "2020-02-10 12:06:23+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "created_at": "2020-02-10 12:05:28+00",
+    "updated_at": "2020-02-10 12:05:28+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "1791199c-61f9-4b5f-8c0b-a808c09644de",
+        "key": "",
+        "name": "918116943",
+        "value": "918116943"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "created_at": "2020-02-10 12:04:44+00",
+    "updated_at": "2020-02-10 12:04:44+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "created_at": "2020-02-10 12:02:54+00",
+    "updated_at": "2020-02-10 12:02:54+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "created_at": "2020-02-10 12:02:12+00",
+    "updated_at": "2020-02-10 12:02:12+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "created_at": "2020-02-10 12:00:51+00",
+    "updated_at": "2020-02-10 12:00:51+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "created_at": "2020-02-10 11:56:11+00",
+    "updated_at": "2020-02-10 11:56:11+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "created_at": "2020-02-10 11:55:08+00",
+    "updated_at": "2020-02-10 11:55:08+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "created_at": "2020-02-10 11:54:29+00",
+    "updated_at": "2020-02-10 11:54:29+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "created_at": "2020-02-10 11:53:16+00",
+    "updated_at": "2020-02-10 11:53:16+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "created_at": "2020-02-10 11:52:23+00",
+    "updated_at": "2020-02-10 11:52:23+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "created_at": "2020-02-10 11:38:03+00",
+    "updated_at": "2020-02-10 11:38:03+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "83b5f7d2-8fd7-4c79-842b-6285f33d09c8",
+        "key": "daroeva",
+        "name": "Дароева",
+        "value": "Дароева"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "created_at": "2020-02-10 11:34:00+00",
+    "updated_at": "2020-02-10 11:34:00+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "3c67ed06-cec2-466c-a11c-0faadb65fd1f",
+        "key": "мир",
+        "name": "привет",
+        "value": "привет"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "created_at": "2020-02-10 11:16:32+00",
+    "updated_at": "2020-02-10 11:16:32+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "6807d77b-6299-4ed9-a697-dc87558f80fd",
+        "key": "shara",
+        "name": "Шар",
+        "value": "Шар"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "created_at": "2020-02-10 11:09:57+00",
+    "updated_at": "2020-02-10 11:09:57+00",
+    "type": {
+      "id": 5,
+      "title": "Заявка по платежам"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "3c56840f-4f3e-4355-a5ee-128bf95bc5c0",
+        "key": "han_petu",
+        "name": "Халлооо",
+        "value": "Халлооо"
+      },
+      {
+        "id": "b2ed2878-eaed-4e53-ba6e-8b86e609a164",
+        "key": "petushara",
+        "name": "Хан",
+        "value": "Хан"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "created_at": "2020-02-10 06:17:42+00",
+    "updated_at": "2020-02-10 06:17:42+00",
+    "type": {
+      "id": 4,
+      "title": "Обновление"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "0c1ae0df-9a63-4da6-b224-42f0520da1be",
+        "key": "anal",
+        "name": "karnaval",
+        "value": "karnaval"
+      },
+      {
+        "id": "75e4742b-494b-4c1f-92f1-4db547e72d96",
+        "key": "anal2",
+        "name": "karnaval2",
+        "value": "karnaval2"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "created_at": "2020-02-10 06:17:42+00",
+    "updated_at": "2020-02-10 06:17:42+00",
+    "type": {
+      "id": 4,
+      "title": "Обновление"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "51e05525-4f19-41cf-9dcf-63e02173b24d",
+        "key": "anal",
+        "name": "karnaval",
+        "value": "karnaval"
+      },
+      {
+        "id": "f54ac9af-4ff2-4fa1-b1fa-eac29b893514",
+        "key": "anal2",
+        "name": "karnaval2",
+        "value": "karnaval2"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "created_at": "2020-02-10 06:17:41+00",
+    "updated_at": "2020-02-10 06:17:41+00",
+    "type": {
+      "id": 4,
+      "title": "Обновление"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "7700cdbb-af37-46bc-8bc1-25a6785353c1",
+        "key": "anal",
+        "name": "karnaval",
+        "value": "karnaval"
+      },
+      {
+        "id": "dca1f8e1-3b33-4adb-9a10-142bad078398",
+        "key": "anal2",
+        "name": "karnaval2",
+        "value": "karnaval2"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "created_at": "2020-02-10 06:17:35+00",
+    "updated_at": "2020-02-10 06:17:35+00",
+    "type": {
+      "id": 4,
+      "title": "Обновление"
+    },
+    "status": {
+      "id": 2,
+      "title": "Открыт"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "8d402c9b-25c6-4d60-b4bc-57ab68d2684d",
+        "key": "anal",
+        "name": "karnaval",
+        "value": "karnaval"
+      },
+      {
+        "id": "8ca08d95-b864-4991-aa01-4b86b139d387",
+        "key": "anal2",
+        "name": "karnaval2",
+        "value": "karnaval2"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "created_at": "2020-02-10 06:11:15+00",
+    "updated_at": "2020-02-10 06:11:15+00",
+    "type": {
+      "id": 2,
+      "title": "Инцидент"
+    },
+    "status": {
+      "id": 1,
+      "title": "В ожидании обработки"
+    },
+    "priority": {
+      "id": "P2",
+      "title": "Критический"
+    },
+    "title": "Второй тикет",
+    "description": "Описание ко второму тикетсу",
+    "reported_by": {
+      "id": "a70051d5-3e0f-4173-910d-ca626934921c",
+      "first_name": "S_A_E",
+      "last_name": "Chappie"
+    },
+    "assignees": [
+      {
+        "id": "b06a247d-2a59-4821-a5e1-663c433bfebd",
+        "first_name": "Tim",
+        "last_name": "Nazar"
+      }
+    ],
+    "claims": [
+      {
+        "id": "d9a0a650-ffa5-46b1-9799-9781240855c9",
+        "key": "anal",
+        "name": "karnaval",
+        "value": "karnaval"
+      },
+      {
+        "id": "9ad30f66-e5b2-441a-8309-70c9827a8226",
+        "key": "anal2",
+        "name": "karnaval2",
+        "value": "karnaval2"
+      }
+    ]
+  }
+]

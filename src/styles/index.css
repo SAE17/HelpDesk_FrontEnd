@@ -1,0 +1,46 @@
+.MuiAppBar-colorPrimary {
+  color: #585353 !important;
+  background-color: #fff !important;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  border-bottom: 1px solid #cecece;
+}
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+  border-bottom: 1px solid #cecece;
+}
+.MuiIconButton-root {
+  border-radius: unset !important;
+}
+.MuiButton-containedPrimary {
+  background-color: #0087fc !important;
+  /* height: 33px !important; */
+  /* height: 48px !important; */
+}
+.my-button > .MuiButton-containedPrimary {
+  height: 33px !important;
+}
+.my-button {
+  height: 33px !important;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #0375da !important;
+}
+/* .MuiDialogContent-root {
+  padding: 8px 30px !important;
+} */
+.MuiDialogActions-root {
+  padding: 8px 2.5em 1.5em !important;
+}
+
+.test-class {
+  background: yellow;
+}
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  width: 0% !important;
+}
+.ant-divider-horizontal.ant-divider-with-text-left .ant-divider-inner-text,
+.ant-divider-horizontal.ant-divider-with-text-right .ant-divider-inner-text {
+  padding: 0 0.4em !important;
+}

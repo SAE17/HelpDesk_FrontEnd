@@ -1,0 +1,35 @@
+[
+  {
+    "id": "f3a342c8-059c-4b8d-87ee-b26a27dd940c",
+    "message": "Han Petu Delay svoyo delo",
+    "created_at": "2020-02-19 06:24:54+00",
+    "updated_at": "2020-02-19 06:24:54+00",
+    "created_by": {
+      "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+      "first_name": "Parvin",
+      "last_name": "Davlatzoda"
+    }
+  },
+  {
+    "id": "b70e3994-f952-48b3-abca-ec380a964626",
+    "message": "Molodec Tak derjat'",
+    "created_at": "2020-02-19 06:29:00+00",
+    "updated_at": "2020-02-19 06:29:00+00",
+    "created_by": {
+      "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+      "first_name": "Khan",
+      "last_name": "Petu"
+    }
+  },
+  {
+    "id": "b70e3994-f952-48b3-abca-ec380a964626",
+    "message": "Molodec Tak derjat'",
+    "created_at": "2020-02-19 06:29:00+00",
+    "updated_at": "2020-02-19 06:29:00+00",
+    "created_by": {
+      "id": "f20ce3b0-2a77-4d6e-84e0-4cbb796fd511",
+      "first_name": "Akmal",
+      "last_name": "Shaimardonov"
+    }
+  }
+]

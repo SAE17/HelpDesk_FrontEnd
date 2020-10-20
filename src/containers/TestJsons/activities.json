@@ -1,0 +1,50 @@
+[
+  {
+    "id": "d74389b1-4321-4e6e-b4ee-a5750c8dae8a",
+    "created_at": "2020-04-01 05:41:05+00",
+    "created_by": {
+      "id": "3f95a51a-e9f3-4a58-a477-b36770b07bad",
+      "first_name": "Tim",
+      "last_name": "Nazar"
+    },
+    "original_value": "Открыт",
+    "new_value": "В ожидании подтверждения",
+    "issue_id": 26
+  },
+  {
+    "id": "73e8b089-28ae-4523-85dd-e0f1c6671e33",
+    "created_at": "2020-04-01 05:40:44+00",
+    "created_by": {
+      "id": "3f95a51a-e9f3-4a58-a477-b36770b07bad",
+      "first_name": "Tim",
+      "last_name": "Nazar"
+    },
+    "original_value": "В процессе",
+    "new_value": "Выполнен",
+    "issue_id": 5
+  },
+  {
+    "id": "9fd868f6-39fa-4c47-bd9d-2fcf427be3c2",
+    "created_at": "2020-04-01 05:40:42+00",
+    "created_by": {
+      "id": "3f95a51a-e9f3-4a58-a477-b36770b07bad",
+      "first_name": "Tim",
+      "last_name": "Nazar"
+    },
+    "original_value": "В ожидании подтверждения",
+    "new_value": "В процессе",
+    "issue_id": 5
+  },
+  {
+    "id": "6b7a3cc0-4752-4b17-8a50-901511530b86",
+    "created_at": "2020-04-01 05:40:39+00",
+    "created_by": {
+      "id": "3f95a51a-e9f3-4a58-a477-b36770b07bad",
+      "first_name": "Tim",
+      "last_name": "Nazar"
+    },
+    "original_value": "Открыт",
+    "new_value": "В ожидании подтверждения",
+    "issue_id": 5
+  }
+]
