@@ -1,8 +1,8 @@
 import React from 'react'
-import { Table, Tag } from 'antd'
+import { Table} from 'antd'
 // import issues from '../TestJsons/issues.json'
 import { Link } from 'react-router-dom'
-import moment from 'moment'
+
 
 const columns = [
   {

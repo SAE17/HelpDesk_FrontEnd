@@ -1,13 +1,10 @@
-import React, { Component, useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { BreadcrumbContext } from './../Breadcrumb/BreadcrumbContext'
 import {
   Row,
   Col,
-  Divider,
   List,
-  Avatar,
   Card,
-  Table,
   Tag,
   Tooltip,
 } from 'antd'
@@ -87,7 +84,7 @@ export default function Home({ ...props }) {
     getReportedByMe()
     getAssignedToMe()
     getActivities()
-  }, [])
+  }, [changeItems, history])
 
   // const columns = [{ title: 'title', dataIndex: 'title', key: 'title' }]
   return (

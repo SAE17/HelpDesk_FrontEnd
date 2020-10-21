@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { Form, DatePicker, Select, Col, Row, Button, Input, Tag, Icon, Menu, Dropdown,  } from 'antd'
-import { DownloadOutlined,DownOutlined } from '@ant-design/icons';
+import React from 'react'
+import { Form, DatePicker, Select, Col, Row, Button, Tag, Menu, Dropdown,  } from 'antd'
+import { DownOutlined } from '@ant-design/icons';
 const Option = Select.Option
 const { OptGroup } = Select
 const { RangePicker } = DatePicker

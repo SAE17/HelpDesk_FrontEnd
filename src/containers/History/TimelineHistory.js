@@ -6,12 +6,12 @@ const TimelineHistory = (props) => {
             <Timeline>
                 {
                     props.history && props.history.map(histElem => (  
-                        <Timeline.Item>{
+                        <Timeline.Item key={histElem.id}>{
                             histElem.created_at + " " + 
                             histElem.created_by.first_name + " " + 
                             histElem.created_by.last_name + " " +
                             histElem.description + " " +
-                            histElem.original_value + ' на ' + histElem.new_value
+                            histElem.original_value + ' ' + histElem.new_value
                         }</Timeline.Item>
                     ))
                 }

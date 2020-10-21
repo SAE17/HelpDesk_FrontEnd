@@ -49,27 +49,7 @@ export default function Tickets() {
             history.push('/signin')
           }
         })
-      
-      // fetch(`/api/1.0/users`)
-      //   .then(res => {
-      //     res.json()
-      //     if (res.status === 401) {
-      //       localStorage.removeItem('isLoggedIn', false)
-      //       history.push('/signin')
-      //     }
-      //   })
-      //   .then(data => {
-      //     Array.isArray(data.users)
-      //       ? setUsers(data.users)
-      //       : console.log('error')
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //   })
     }
-
-
-
     const getTypes = () => {
       axios({
         method: 'get',
@@ -86,23 +66,6 @@ export default function Tickets() {
             history.push('/signin')
           }
         })
-      // fetch(`/api/1.0/issue_types`)
-      //   .then(res => {
-      //     res.json()
-      //     if (res.status === 401) {
-      //       localStorage.removeItem('isLoggedIn', false)
-      //       history.push('/signin')
-      //     }
-      //   })
-      //   .then(data => {
-      //     Array.isArray(data.types)
-      //       ? setTypes(data.types)
-      //       : console.log('error')
-      //     console.log(data.types)
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //   })
     }
     const getPriority = () => {
       axios({
@@ -120,22 +83,6 @@ export default function Tickets() {
             history.push('/signin')
           }
         })
-      // fetch(`/api/1.0/priorities`)
-      //   .then(res => {
-      //     res.json()
-      //     if (res.status === 401) {
-      //       localStorage.removeItem('isLoggedIn', false)
-      //       history.push('/signin')
-      //     }
-      //   })
-      //   .then(data => {
-      //     Array.isArray(data.priorities)
-      //       ? setPriorities(data.priorities)
-      //       : console.log('error')
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //   })
     }
     const getStatus = () => {
       axios({
@@ -176,7 +123,7 @@ export default function Tickets() {
     getUsers()
     getStatus()
 
-  }, [])
+  }, [changeItems, history])
 
   const handleMenuClick = e => {
     if(e.key==='TechReport'){

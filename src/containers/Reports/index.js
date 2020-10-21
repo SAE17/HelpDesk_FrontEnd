@@ -19,7 +19,7 @@ export default function Reports() {
   const [from, setFrom] = useState(moment())
   const [to, setTo] = useState(moment())
 
-  const { contextType, changeItems } = useContext(BreadcrumbContext)
+  const { changeItems } = useContext(BreadcrumbContext)
   const [reportType, setReportType] = useState('')
   
   const handleChangePeriod = period => {
@@ -87,7 +87,7 @@ export default function Reports() {
         })
     }
     getCcData()
-  }, [])
+  }, [changeItems, from, to])
 
   const getTechueTableHandler = () => {
     fetch(`/api/1.0/salary_technique_reports?from=${moment(from).format('YYYY-MM-DD')}&to=${moment(to).format('YYYY-MM-DD')}`)
@@ -167,7 +167,7 @@ export default function Reports() {
     setReportType(key)
   }
   const getReportData = () => {
-    if (reportType != 2) {
+    if (reportType !== 2) {
       getTechueTableHandler()
     } else {
       getCcData()

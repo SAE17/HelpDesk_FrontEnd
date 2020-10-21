@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { Comment, Tooltip, List } from 'antd'
 import moment from 'moment'

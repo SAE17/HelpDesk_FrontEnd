@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import { Layout, Menu, Button, Row, Col, Input, Avatar, Dropdown } from 'antd'
+import { Layout, Menu, Button, Row, Col, Avatar, Dropdown } from 'antd'
 import './MainLayout.css'
 import { PlusOutlined, UserOutlined } from '@ant-design/icons'
 import AddTicket from 'containers/Ticket/AddTicket'
@@ -8,7 +8,6 @@ import ButtonGroup from 'antd/lib/button/button-group'
 import MyBreadcrumb from 'containers/Breadcrumb/MyBreadcrumb'
 import axios from 'axios'
 
-const { Search } = Input
 const { Header, Content, Footer } = Layout
 
 class MainLayout extends Component {

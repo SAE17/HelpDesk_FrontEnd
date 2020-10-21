@@ -23,7 +23,7 @@ const History = ({...props}) => {
               })
           }
           getHistory()
-    }, [])
+    }, [props.id])
     return(
       <TimelineHistory history={historyIssues}/>
     )

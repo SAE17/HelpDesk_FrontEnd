@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Modal, Button, Input, Form, Select } from 'antd'
 import axios from 'axios'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 const { Option } = Select
 export default function AddingUser({ visible, ...props }) {
   let history = useHistory()
@@ -45,9 +45,9 @@ export default function AddingUser({ visible, ...props }) {
             history.push('/signin')
           }
         })
-    }
+    };
     getGroups()
-  }, [])
+  }, [history])
   const handleAddUser = () => {
     setIsLoadingOk(true)
     axios({
@@ -65,12 +65,10 @@ export default function AddingUser({ visible, ...props }) {
       },
     })
       .then((response) => {
-        const newItem = response.data.user
         setIsLoadingOk(false)
         props.closeAddUser()
         // console.log(props.history.push(`/users`))
       })
-
       .catch((err) => {
         setIsLoadingOk(false)
         console.log(err)

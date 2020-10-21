@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-// import comments from '../TestJsons/comments.json'
 import axios from 'axios'
 
-import { Comment, Avatar, Form, Button, List, Input } from 'antd'
+import { Comment, Avatar, Form, Button,Input } from 'antd'
 import moment from 'moment'
 import Comments from './index.js'
 
@@ -44,7 +43,7 @@ export default function AddComment({ ...props }) {
         })
     }
     getComments()
-  }, [])
+  }, [id])
 
   const handleSubmit = () => {
     if (!value) {

@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react'
-import { Form, Divider, Button, Row, Col, Typography, Select } from 'antd'
+import { Form, Divider, Row, Col, Typography, Select } from 'antd'
 import Activity from './Activity'
 import moment from 'moment'
 import { BreadcrumbContext } from '../Breadcrumb/BreadcrumbContext'
@@ -21,16 +21,9 @@ export default function Ticket({ ...props }) {
   const [status, setStatus] = React.useState('')
 
   const [title, setTitle] = React.useState('')
-  const [isChanghing, setIsChenghing] = React.useState('')
 
   const [assignees, setAssignees] = React.useState([])
   const [assign, selectAssign] = React.useState('')
-  // const [comments, setComments] = React.useState([])
-
-  const handleChanghe = () => {
-    // console.log(id)
-    setIsChenghing(true)
-  }
 
   const handleChangheStatus = value => {
     setStatus(value)
@@ -96,23 +89,6 @@ export default function Ticket({ ...props }) {
     ])
 
     const getIssue = () => {
-      // fetch(`/api/1.0/issues/${id}`)
-      //   .then(res => {
-      //     res.json()
-      //     if (res.status === 401) {
-      //       localStorage.removeItem('isLoggedIn', false)
-      //       history.push('/signin')
-      //     }
-      //   })
-      //   .then(data => {
-      //     console.log('getIssues:', data)
-      //     data.issue && setIssue(data.issue)
-      //     data.issue && setTitle(data.issue.title)
-      //     data.issue.status && setStatus(data.issue.status.id)
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //   })
       axios({
         method: 'get',
         url: `/api/1.0/issues/${id}`,
@@ -176,8 +152,7 @@ export default function Ticket({ ...props }) {
     getIssue()
     getStatuses()
     getAssignees()
-    // getComments()
-  }, [])
+  }, [changeItems, history, id, title]);
   return (
     <div>
       <Row>

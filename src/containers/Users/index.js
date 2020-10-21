@@ -7,7 +7,7 @@ import AddingUser from 'containers/User/AddingUser'
 
 export default function Users() {
   const [users, setUsers] = useState([])
-  const { contextType, changeItems } = useContext(BreadcrumbContext)
+  const { changeItems } = useContext(BreadcrumbContext)
   const [visibleAddUser, setVisibleAddUser] = useState(false)
   useEffect(() => {
     changeItems([<Link to={`/`}>Helpdesk</Link>, 'Пользователи'])
@@ -25,7 +25,7 @@ export default function Users() {
         })
     }
     getUsers()
-  }, [visibleAddUser])
+  }, [visibleAddUser, changeItems])
   const openAddUser = () => {
     setVisibleAddUser(true)
     console.log('visibleAddUser:', visibleAddUser)

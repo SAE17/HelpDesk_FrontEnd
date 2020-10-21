@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table, Tag, Pagination } from 'antd'
+import { Table, Tag } from 'antd'
 // import issues from '../TestJsons/issues.json'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
@@ -83,7 +83,6 @@ export default class TicketsTable extends React.Component {
   render() {
     const { 
       issues,
-      totalRows,
       changePageHandler,
       changePageSizeHandler,
       pageSize

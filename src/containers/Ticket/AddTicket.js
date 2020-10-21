@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Form from 'antd/lib/form/Form'
 import { Modal, Button } from 'antd'
 import { useHistory } from 'react-router-dom'
 import axios from 'axios'
@@ -198,10 +197,6 @@ function AddTicket({ visibleOpenTicket, ...props }) {
     getCities()
     getFaults()
   }, [])
-
-  const handleChange = event => {
-    setAssignees(event.target.value)
-  }
   
   const clearState = () => {
     // TODO: почистить стейты
@@ -213,7 +208,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
 
     const copyValues = Object.values(copy)
 
-    if (city != '') {
+    if (city !== '') {
       copyValues.forEach((element) => {
         if (element.key === 'Город') {
           element.value = city
@@ -221,7 +216,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
       })
     }
 
-    if (fault != '') {
+    if (fault !== '') {
       copyValues.forEach((element) => {
         if (element.key === 'Группа неисправности') {
           element.value = fault
@@ -229,7 +224,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
       })
     }
 
-    if (isPassing != '') {
+    if (isPassing !== '') {
       copyValues.forEach((element) => {
         if (element.key === 'Попутный') {
           element.value = isPassing
