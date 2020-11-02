@@ -30,6 +30,7 @@ const AddTicketForm = ({ ...props }) => {
     users,
     types,
     assignees,
+    subcategories,
     setAssignees,
     title,
     setTitle,
@@ -51,7 +52,14 @@ const AddTicketForm = ({ ...props }) => {
     handleSubmit,
     isPassing,
     setIsPassing,
-
+    subcategory,
+    setSubcategory,
+    setService,
+    services,
+    service,
+    // categories,
+    // setCategory,
+    // category,
   } = props
 
   const [form] = Form.useForm()
@@ -195,12 +203,37 @@ const AddTicketForm = ({ ...props }) => {
                 disabled
               />
             } else if (key === 'Попутный' || values.key === 'Попутный') {
-              comp=        <Checkbox 
+              comp=<Checkbox 
               onChange={setIsPassing}
               value={isPassing}>      
                 </Checkbox>
+            } else if (key === 'Субкатегория' || values.key === 'Субкатегория') {
+              comp = <Select value={subcategory} onChange={setSubcategory}>
+                {subcategories.map(option => (
+                  <Option key={option.id} value={''+option.id}>
+                    {option.title}
+                  </Option>
+                ))}
+              </Select>
+            } else if (key === 'Услуга' || values.key === 'Услуга') {
+              comp = <Select value={service} onChange={setService}>
+                {services.map(option => (
+                  <Option key={option.id} value={''+option.id}>
+                    {option.name}
+                  </Option>
+                ))}
+              </Select>
             }
+            //  else if (key === 'Категория' || values.key === 'Категория') {
+            //   comp = <Select value={category} onChange={setCategory}>
+            //     {categories.map(option => (
+            //       <Option key={option.id} value={''+option.id}>
+            //         {option.title}
+            //       </Option>
+            //     ))}
+            //   </Select>
 
+            // }
             return <Form.Item
                 key={key}
                 label={values.key}

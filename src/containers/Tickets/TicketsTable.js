@@ -34,7 +34,21 @@ const columns = [
     title: 'Статус',
     dataIndex: 'status',
     // render: text => <button className="link">{text}</button>,
-    render: (text, record) => <span>{record.status.title}</span>,
+    render: (text, record) => {
+      let color = record.status.id===2 ? '#87d068' : '#CEFF86';
+      if(record.status.id === 3) {
+        color = '#2db7f5'
+      } else if (record.status.id === 4) {
+        color = '#FDCA02'
+      } else if (record.status.id === 6) {
+        color = '#ff0000'
+      }
+      return(
+        <Tag color={color} key={record.status.id}>
+          <div>{record.status.title.toUpperCase()}</div>
+        </Tag>
+      )
+    },
   },
   {
     title: 'Исполнители',

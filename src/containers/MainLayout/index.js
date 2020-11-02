@@ -112,6 +112,9 @@ class MainLayout extends Component {
                 <Menu.Item key="/tickets">
                   Заявки <Link to="/tickets" />
                 </Menu.Item>
+                <Menu.Item key="/calls">
+                  Звонки <Link to="/calls" />
+                </Menu.Item>
               </Menu>
               <ButtonGroup>
                 <Button type="link" onClick={this.handleOpenTicket}>
@@ -150,7 +153,7 @@ class MainLayout extends Component {
 
           <div
             className="site-layout-background"
-            style={{ padding: 24, minHeight: 380, width: '1249px' }}
+            style={{ padding: 24, minHeight: 380, width: '1400px' }}
           >
             {this.props.children}
           </div>

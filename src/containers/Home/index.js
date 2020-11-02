@@ -123,7 +123,7 @@ export default function Home({ ...props }) {
                         {item.created_by && item.created_by.first_name}{' '}
                         {item.created_by && item.created_by.last_name}
                       </Link>{' '}
-                      внёс изменения в <Link>тикет {item.issue_id}</Link>
+                      внёс изменения в <Link to={`/tickets/${item.id}`}>тикет {item.issue_id}</Link>
                     </div>
                   }
                 />

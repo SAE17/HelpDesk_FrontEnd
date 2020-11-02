@@ -41,9 +41,6 @@ export default function Filters({ ...props }) {
       <Menu.Item key="TechReport">
         Отчет техников
       </Menu.Item>
-      <Menu.Item key="PaymentReport">
-        Отчет платежей
-      </Menu.Item>
     </Menu>
   );
   
@@ -94,6 +91,11 @@ export default function Filters({ ...props }) {
                 value={type}
                 style={{ width: 300 }}
                 onChange={value => props.setType(value)}
+                showSearch
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                }
               >
                 <Option key="" value="">
                   Все

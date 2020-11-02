@@ -129,34 +129,12 @@ export default function Tickets() {
     if(e.key==='TechReport'){
       generateDetailTechReportHandle()
     }
-    if(e.key==='PaymentReport'){
-      generateDetailedCallReportHandle()
-    }
     if(e.key==='TotalReport'){
       generateDetailTotalReportHandle()
     }
   }
 
   //Скачать детальный отчет заявкам платежа
-  const generateDetailedCallReportHandle = () => {
-    fetch(`/api/1.0/reports/call_details?from=${moment(from).format(
-      'YYYY-MM-DD',
-    )}&to=${moment(to).format(
-      'YYYY-MM-DD',
-    )}&reported_by=${reported_by}&assigned_to=${assigned_to}&status=${status}&priority=${priority}`, {
-      headers: {
-        'Accept': 'xlsx'
-      },
-    })
-
-      .then((res) => res.blob())
-      .then((blob) => download(blob, `Detailed Report ${moment(from).format('YYYY-MM-DD', )}  ${moment(to).format(
-                                      'YYYY-MM-DD',)} `, 'xlsx')
-      )
-      .catch((err) => {
-        console.log(err)
-      })
-  }
 
   // Скачать детальный отчет по заявкам техника
   const generateDetailTechReportHandle = () => {

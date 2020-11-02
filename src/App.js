@@ -9,10 +9,10 @@ import Reports from 'containers/Reports'
 
 import 'antd/dist/antd.css'
 import MainLayoutWithContext from 'containers/MainLayout/MainLayoutWithContext'
-
 import Users from 'containers/Users'
 import Home from 'containers/Home'
 import User from 'containers/User'
+import Calls from 'containers/Calls'
 function App() {
   return (
     <Switch>
@@ -24,6 +24,7 @@ function App() {
         <PrivateRoute exact path="/users" component={Users} />
         <PrivateRoute exact path="/users/:id/details" component={User} />
         <PrivateRoute exact path="/reports" component={Reports} />
+        <PrivateRoute exact path="/calls" component={Calls}/>
       </MainLayoutWithContext>
       {/* <PrivateRoute exact path="/" component={PrimarySearchAppBar} /> */}
     </Switch>
