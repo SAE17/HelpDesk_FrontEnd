@@ -9,8 +9,16 @@ export default function Users() {
   const [users, setUsers] = useState([])
   const { changeItems } = useContext(BreadcrumbContext)
   const [visibleAddUser, setVisibleAddUser] = useState(false)
+  const [disable, setDisable] = useState(true)
+
   useEffect(() => {
     changeItems([<Link to={`/`}>Helpdesk</Link>, 'Пользователи'])
+    const role = JSON.parse(localStorage.getItem("authData")).role.id
+    if ( role !== 1) {
+      setDisable(true)
+    } else {
+      setDisable(false)
+    }
 
     const getUsers = () => {
       fetch(`/api/1.0/users`)
@@ -25,32 +33,32 @@ export default function Users() {
         })
     }
     getUsers()
-  }, [visibleAddUser, changeItems])
+  }, [visibleAddUser, changeItems, disable])
   const openAddUser = () => {
     setVisibleAddUser(true)
-    console.log('visibleAddUser:', visibleAddUser)
   }
   const closeAddUser = () => {
     setVisibleAddUser(false)
-    console.log('visibleAddUser:', visibleAddUser)
   }
-  return (
-    <Fragment>
-      <AddingUser
-        visible={visibleAddUser}
-        closeAddUser={closeAddUser}
-      ></AddingUser>
-      <Row style={{ justifyContent: 'flex-end' }}>
-        {' '}
-        <Button
-          style={{ marginBottom: '1em' }}
-          onClick={openAddUser}
-          type="primary"
-        >
-          Добавить +
-        </Button>
-      </Row>
-      <UsersTable users={users} closeAddUser={closeAddUser}></UsersTable>
-    </Fragment>
-  )
+
+    return (
+      <Fragment>
+        <AddingUser
+          visible={visibleAddUser}
+          closeAddUser={closeAddUser}
+        ></AddingUser>
+        <Row style={{ justifyContent: 'flex-end' }}>
+          {' '}
+          <Button
+            style={{ marginBottom: '1em'}}
+            onClick={openAddUser}
+            type="primary"
+            disabled={disable}
+          >
+            Добавить +
+          </Button>
+        </Row>
+        <UsersTable users={users} closeAddUser={closeAddUser} isDisabled={disable}></UsersTable>
+      </Fragment>
+    )
 }

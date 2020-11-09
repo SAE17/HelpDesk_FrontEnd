@@ -19,6 +19,7 @@ const History = ({...props}) => {
                 console.log(err)
                 if (err.response && err.response.status === 401) {
                   localStorage.removeItem('isLoggedIn', false)
+                  localStorage.removeItem('authData')
                 }
               })
           }

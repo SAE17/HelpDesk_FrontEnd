@@ -10,9 +10,20 @@ const columns = [
     title: 'Логин',
     dataIndex: 'username',
     // render: text => <button className="link">{text}</button>,
-    render: (text, record) => (
-      <Link to={`/users/${record.id}/details`}>{text}</Link>
-    ),
+    render: (text, record) => {
+      const userID = JSON.parse(localStorage.getItem("authData")).id
+      const roleID = JSON.parse(localStorage.getItem("authData")).role.id
+      if (userID === record.id || roleID === 1) {
+        return (
+          <Link to={`/users/${record.id}/details`}>{text}</Link>
+        )
+      } else {
+        return (
+          <Link to={`/users/${record.id}/details`} disabled>{text}</Link>
+        )
+
+      }
+    },
   },
 
   {
@@ -37,7 +48,6 @@ const columns = [
 const showHeader = true
 const footer = () => 'Here is footer'
 const pagination = { position: 'none' }
-
 export default class UsersTable extends React.Component {
   state = {
     bordered: false,
@@ -49,6 +59,7 @@ export default class UsersTable extends React.Component {
     footer,
     scroll: undefined,
   }
+
   render() {
     const { users } = this.props
     const pageSizeOptions = ['10', '100', '250', '500']
@@ -57,10 +68,11 @@ export default class UsersTable extends React.Component {
         <Table
           {...this.state}
           columns={columns}
+
           bordered
+          filtered={true}
           dataSource={users}
           rowKey="id"
-          rowClassName="rows-color"
           // loading={isLoadingTable}
           footer={() => ''}
           pagination={{ showSizeChanger: true, pageSizeOptions, pageSize: 250 }}

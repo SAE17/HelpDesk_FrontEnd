@@ -137,11 +137,14 @@ export default class CallsTable extends React.Component{
         ellipsis: true,
         // size: 'midle',
     }
-
     render() {
         const {
-          issues  
+          issues, 
+          changePageHandler,
+          changePageSizeHandler,
+          pageSize,
         } = this.props 
+        const pageSizeOptions = ['10', '100', '250', '500']
         return (   
           <div>
             <Table
@@ -149,6 +152,14 @@ export default class CallsTable extends React.Component{
               columns={columns}
               dataSource={issues}
               rowKey="id"
+              footer={() => ''}
+              pagination={{
+                pageSizeOptions: pageSizeOptions, 
+                showSizeChanger:true,
+                pageSize:pageSize,
+                onChange: changePageHandler,
+                onShowSizeChange: changePageSizeHandler,
+              }}
             />
           </div>
         )

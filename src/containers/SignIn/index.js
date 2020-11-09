@@ -55,6 +55,7 @@ export default function SignIn() {
   let history = useHistory()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+
   const [open, setOpen] = React.useState(false)
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -66,12 +67,10 @@ export default function SignIn() {
   const handleChangeUsername = e => {
     const value = e.currentTarget.value
     setUsername(value)
-    console.log(username)
   }
   const handleChangePassword = e => {
     const value = e.currentTarget.value
     setPassword(value)
-    console.log(password)
   }
   const onLogin = e => {
     e.preventDefault()
@@ -100,6 +99,7 @@ export default function SignIn() {
         // Examine the text in the response
         response.json().then(function(data) {
           console.log(data)
+          localStorage.setItem("authData", JSON.stringify(data.user))
         })
       })
       .then(function(response) {})
@@ -117,7 +117,7 @@ export default function SignIn() {
   }
 
   return (
-    <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs">
       <Snackbar
         open={open}
         autoHideDuration={6000}

@@ -46,6 +46,7 @@ export default function Tickets() {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -63,6 +64,7 @@ export default function Tickets() {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -80,6 +82,7 @@ export default function Tickets() {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -97,6 +100,7 @@ export default function Tickets() {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -204,6 +208,7 @@ export default function Tickets() {
         console.log(err)
         if (err.response && err.response.status === 401) {
           localStorage.removeItem('isLoggedIn', false)
+          localStorage.removeItem('authData')
           history.push('/signin')
         }
       })
@@ -280,7 +285,6 @@ export default function Tickets() {
   const changePageSizeHandler = (currentPage, pageSize) => {
     setCurrentPage(currentPage)
     setPageSize(pageSize)
-    console.log("PageSize", pageSize, " CurrentPage: ", currentPage)
   }
 
   const changePageHandler = (page, pageSize) => {

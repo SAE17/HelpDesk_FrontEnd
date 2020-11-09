@@ -26,6 +26,9 @@ export default function Calls() {
 
     const [searchTerm, setSearchTerm] = useState('')
 
+    const [pageSize, setPageSize] = useState('10')
+    const [currentPage, setCurrentPage] = useState('')
+
     const [period, setPeriod] = useState(undefined)
     const [from, setFrom] = useState(moment())
     const [to, setTo] = useState(moment())
@@ -48,6 +51,7 @@ export default function Calls() {
                 console.log(err)
                 if (err.response && err.response.status === 401) {
                   localStorage.removeItem('isLoggedIn', false)
+                  localStorage.removeItem('authData')
                   history.push('/signin')
                 }
             })
@@ -65,6 +69,7 @@ export default function Calls() {
                 console.log(err)
                 if (err.response && err.response.status === 401) {
                   localStorage.removeItem('isLoggedIn', false)
+                  localStorage.removeItem('authData')
                   history.push('/signin')
                 }
             })
@@ -82,6 +87,7 @@ export default function Calls() {
                 console.log(err)
                 if (err.response && err.response.status === 401) {
                   localStorage.removeItem('isLoggedIn', false)
+                  localStorage.removeItem('authData')
                   history.push('/signin')
                 }
             })
@@ -99,6 +105,7 @@ export default function Calls() {
                 console.log(err)
                 if (err.response && err.response.status === 401) {
                   localStorage.removeItem('isLoggedIn', false)
+                  localStorage.removeItem('authData')
                   history.push('/signin')
                 }
             })
@@ -201,6 +208,7 @@ export default function Calls() {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -236,6 +244,18 @@ export default function Calls() {
           console.log(err)
         })
     }
+    
+    const changePageSizeHandler = (currentPage, pageSize) => {
+      setCurrentPage(currentPage)
+      setPageSize(pageSize)
+    }
+
+    const changePageHandler = (page, pageSize) => {
+      setCurrentPage(page)
+      setPageSize(pageSize)
+    }
+
+
 
     return (
         <div>
@@ -273,6 +293,10 @@ export default function Calls() {
             </CallsFilters>
             <CallsTable
                 issues={issues}
+                pageSize={pageSize}
+                currentPage={currentPage}
+                changePageHandler={changePageHandler}
+                changePageSizeHandler={changePageSizeHandler}
             ></CallsTable>
         </div>
         

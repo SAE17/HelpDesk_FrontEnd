@@ -25,6 +25,8 @@ export default function Ticket({ ...props }) {
   const [assignees, setAssignees] = React.useState([])
   const [assign, selectAssign] = React.useState('')
 
+  const [disable, setDisable] = React.useState(true)
+
   const handleChangheStatus = value => {
     setStatus(value)
     axios({
@@ -45,6 +47,7 @@ export default function Ticket({ ...props }) {
         console.log(err)
         if (err.response && err.response.status === 401) {
           localStorage.removeItem('isLoggedIn', false)
+          localStorage.removeItem('authData')
           history.push('/signin')
         }
       })
@@ -69,6 +72,7 @@ export default function Ticket({ ...props }) {
         console.log(err)
         if (err.response && err.response.status === 401) {
           localStorage.removeItem('isLoggedIn', false)
+          localStorage.removeItem('authData')
           history.push('/signin')
         }
       })
@@ -106,6 +110,7 @@ export default function Ticket({ ...props }) {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -125,6 +130,7 @@ export default function Ticket({ ...props }) {
           console.log(err)
           if (err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
@@ -145,13 +151,23 @@ export default function Ticket({ ...props }) {
           console.log(err)
           if (err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })
     }
+    const authUser = () => {
+      const role = JSON.parse(localStorage.getItem("authData")).role.id
+      if ( role !== 1) {
+        setDisable(true)
+      } else {
+        setDisable(false)
+      }
+    }
     getIssue()
     getStatuses()
     getAssignees()
+    authUser()
   }, [changeItems, history, id, title]);
   return (
     <div>
@@ -183,6 +199,7 @@ export default function Ticket({ ...props }) {
                     // onChange={value => props.setStatus(value)}
                     onChange={handleChangheStatus}
                     value={status}
+                    disabled={disable}
                   >
                     {statuses.map(option => (
                       <Option key={option.id} value={option.id}>
@@ -229,6 +246,7 @@ export default function Ticket({ ...props }) {
             <Select 
                 value={assign}
                 onChange={handleChangheAssign}
+                disabled={disable}
               >
                 {assignees.map(assign => (
                   <Option  key={assign.id} value={assign.id}>

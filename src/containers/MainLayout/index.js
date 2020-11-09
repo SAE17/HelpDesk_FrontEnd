@@ -14,8 +14,15 @@ class MainLayout extends Component {
   state = {
     collapsed: true,
     visibleOpenTicket: false,
+    isDisplay: () => {
+      const role = JSON.parse(localStorage.getItem("authData")).role.id
+      if (role !== 1) {
+        return 'none'
+      } else {
+        return 'block'
+      }
+    },
   }
-
   handleOpenTicket = () => {
     this.setState({ visibleOpenTicket: true })
   }
@@ -30,6 +37,7 @@ class MainLayout extends Component {
       .then((response) => {
         if (response.data.code === 204) {
           localStorage.removeItem('isLoggedIn', false)
+          localStorage.removeItem('authData', false)
           // history.push('/signin')
           window.location.replace('/')
         }
@@ -103,7 +111,7 @@ class MainLayout extends Component {
                 </Menu.Item> */}
 
                 {/* <Menu.Item key="/reports">Отчеты</Menu.Item> */}
-                <Menu.Item key="/users">
+                <Menu.Item key="/users" style={{ display: this.props.isDisplay }}>
                   Пользователи <Link to="/users" />
                 </Menu.Item>
                 <Menu.Item key="/reports">
@@ -153,7 +161,7 @@ class MainLayout extends Component {
 
           <div
             className="site-layout-background"
-            style={{ padding: 24, minHeight: 380, width: '1400px' }}
+            style={{ padding: 24, minHeight: 380, minWidth: '1400px' }}
           >
             {this.props.children}
           </div>

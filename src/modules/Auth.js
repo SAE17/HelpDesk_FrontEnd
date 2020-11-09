@@ -23,6 +23,7 @@ class Auth {
    */
   static deauthenticateUser() {
     localStorage.removeItem('isLoggedIn')
+    localStorage.removeItem('authData')
   }
 }
 

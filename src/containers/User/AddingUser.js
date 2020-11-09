@@ -42,6 +42,7 @@ export default function AddingUser({ visible, ...props }) {
           console.log(err)
           if (err.response && err.response.status === 401) {
             localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
             history.push('/signin')
           }
         })

@@ -349,7 +349,8 @@ function AddTicket({ visibleOpenTicket, ...props }) {
         centered footer = {
             [ <Button key = "back"
                 onClick = { handleClose } >
-                Отмена </Button>,
+                Отмена 
+            </Button>,
                 <Button
                 key = "submit"
                 type = "primary"
@@ -359,7 +360,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
                 Добавить </Button>,
             ]
         }>
-       
+        
         <AddTicketForm template = { template }
         handleChangeTemplate = { handleChangeTemplate }
         selectedTemplate = { selectedTemplate }
