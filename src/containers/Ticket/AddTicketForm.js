@@ -136,7 +136,6 @@ const AddTicketForm = ({ ...props }) => {
             tagRender={tagRender}
             defaultValue={assignees}
             style={{ width: '100%' }}
-            // users={users}
             onChange={value => {
               setAssignees(value)
             }}
@@ -188,37 +187,59 @@ const AddTicketForm = ({ ...props }) => {
                 ))}
               </Select>
             } else if (key === 'Расстояние' || values.key === 'Расстояние') {
-              comp=<Input
+              comp = <Input
                 placeholder="Значение"
                 disabled
               />
             } else if (key === 'Балл' || values.key === 'Балл') {
-              comp=<Input
+              comp = <Input
                 placeholder="Значение"
                 disabled
               />
             } else if (key === 'Потраченное средств' || values.key === 'Потраченное средств') {
-              comp=<Input
+              comp = <Input
                 placeholder="Значение"
                 disabled
               />
             } else if (key === 'Попутный' || values.key === 'Попутный') {
-              comp=<Checkbox 
-              onChange={setIsPassing}
-              value={isPassing}>      
-                </Checkbox>
+              comp = <Checkbox
+                onChange={setIsPassing}
+                value={isPassing}>
+              </Checkbox>
             } else if (key === 'Субкатегория' || values.key === 'Субкатегория') {
-              comp = <Select value={subcategory} onChange={setSubcategory}>
+              comp = <Select
+                value={subcategory}
+                showSearch
+                placeholder="Search to Select"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                }
+                filterSort={(optionA, optionB) =>
+                  optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                }
+                onChange={setSubcategory}>
                 {subcategories.map(option => (
-                  <Option key={option.id} value={''+option.id}>
+                  <Option key={option.id} value={'' + option.id}>
                     {option.title}
                   </Option>
                 ))}
               </Select>
             } else if (key === 'Услуга' || values.key === 'Услуга') {
-              comp = <Select value={service} onChange={setService}>
+              comp = <Select
+                showSearch
+                placeholder="Search to Select"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                }
+                filterSort={(optionA, optionB) =>
+                  optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                }
+                value={service}
+                onChange={setService}>
                 {services.map(option => (
-                  <Option key={option.id} value={''+option.id}>
+                  <Option key={option.id} value={'' + option.id}>
                     {option.name}
                   </Option>
                 ))}
@@ -235,12 +256,12 @@ const AddTicketForm = ({ ...props }) => {
 
             // }
             return <Form.Item
-                key={key}
-                label={values.key}
-                required={false}
-                style={{ marginBottom: '5px' }}
-              > {comp} </Form.Item>
-        })}
+              key={key}
+              label={values.key}
+              required={false}
+              style={{ marginBottom: '5px' }}
+            > {comp} </Form.Item>
+          })}
       </Form>
       <Divider style={{ marginBottom: '10px' }}></Divider>
       <Form onSubmit={handleSubmit}>

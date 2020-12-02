@@ -1,18 +1,16 @@
 import React, { useEffect, useContext } from 'react'
-import { Form, Divider, Row, Col, Typography, Select } from 'antd'
+import { Form, Divider, Row, Col, Typography, Select, message } from 'antd'
 import Activity from './Activity'
 import moment from 'moment'
 import { BreadcrumbContext } from '../Breadcrumb/BreadcrumbContext'
 import { Link, useHistory } from 'react-router-dom'
 import axios from 'axios'
 
-// import issues from '../TestJsons/issues.json'
-// const issue = issues[0]
 const { Option } = Select
 const { Title } = Typography
 export default function Ticket({ ...props }) {
   let history = useHistory()
-
+  var disable = false
   const id = props.match.params.id
   const { changeItems } = useContext(BreadcrumbContext)
 
@@ -25,7 +23,6 @@ export default function Ticket({ ...props }) {
   const [assignees, setAssignees] = React.useState([])
   const [assign, selectAssign] = React.useState('')
 
-  const [disable, setDisable] = React.useState(true)
 
   const handleChangheStatus = value => {
     setStatus(value)
@@ -41,6 +38,7 @@ export default function Ticket({ ...props }) {
       .then(response => {
         console.log('response:', response.data)
         response.data.issue && setIssue(response.data.issue)
+        message.success({ content: 'Статус изменен успешно', duration: 1 })
       })
 
       .catch(err => {
@@ -66,6 +64,7 @@ export default function Ticket({ ...props }) {
       .then(response => {
         console.log('response:', response.data)
         response.data.issue && setIssue(response.data.issue)
+        message.success({ content: 'Исполнитель изменен успешно', duration: 1 })
       })
 
       .catch(err => {
@@ -91,30 +90,6 @@ export default function Ticket({ ...props }) {
       <Link to={'/tickets'}>Заявки</Link>,
       `${id} ${title}`,
     ])
-
-    const getIssue = () => {
-      axios({
-        method: 'get',
-        url: `/api/1.0/issues/${id}`,
-      })
-        .then(response => {
-          console.log('response:', response.data)
-          if (response.data) {
-            response.data.issue && setIssue(response.data.issue)
-            response.data.issue && setTitle(response.data.issue.title)
-            response.data.issue.status &&
-              setStatus(response.data.issue.status.id)
-          }
-        })
-        .catch(err => {
-          console.log(err)
-          if (err.response && err.response.status === 401) {
-            localStorage.removeItem('isLoggedIn', false)
-            localStorage.removeItem('authData')
-            history.push('/signin')
-          }
-        })
-    }
     const getStatuses = () => {
       axios({
         method: 'get',
@@ -125,6 +100,7 @@ export default function Ticket({ ...props }) {
           if (response.data) {
             response.data.statuses && setStatuses(response.data.statuses)
           }
+
         })
         .catch(err => {
           console.log(err)
@@ -144,7 +120,6 @@ export default function Ticket({ ...props }) {
           console.log('response.data:', response.data)
           if (response.data) {
             response.data.users && setAssignees(response.data.users)
-            response.data.users && selectAssign(response.data.users[0].first_name + response.data.users[0].last_name)
           }
         })
         .catch(err => {
@@ -156,29 +131,52 @@ export default function Ticket({ ...props }) {
           }
         })
     }
-    const authUser = () => {
-      const role = JSON.parse(localStorage.getItem("authData")).role.id
-      if ( role !== 1) {
-        setDisable(true)
-      } else {
-        setDisable(false)
-      }
+    const getIssue = () => {
+      axios({
+        method: 'get',
+        url: `/api/1.0/issues/${id}`,
+      })
+        .then(response => {
+          console.log('response:', response.data)
+          if (response.data) {
+            response.data.issue && setIssue(response.data.issue)
+            response.data.issue && setTitle(response.data.issue.title)
+            response.data.issue.status &&
+              setStatus(response.data.issue.status.id)
+            response.data.issue.assignees && selectAssign(response.data.issue.assignees[0].id)
+            if (response.data.issue.assignees === undefined) {
+
+            }
+          }
+        })
+        .catch(err => {
+          console.log(err)
+          if (err.response && err.response.status === 401) {
+            localStorage.removeItem('isLoggedIn', false)
+            localStorage.removeItem('authData')
+            history.push('/signin')
+          }
+        })
     }
-    getIssue()
     getStatuses()
+    getIssue()
     getAssignees()
-    authUser()
   }, [changeItems, history, id, title]);
+
+  const role = JSON.parse(localStorage.getItem("authData")).role.id
+  if (role !== 1 && status === 6) {
+    disable = true
+  } else {
+    disable = false
+  }
   return (
     <div>
+
       <Row>
         <Col span={12}>
           <Title level={4}>{issue && issue.title} </Title>
         </Col>
         <Col span={2} offset={10}>
-          {/* <Button type="primary" onClick={handleChanghe}>
-            Изменить
-          </Button> */}
         </Col>
       </Row>
       <Row>
@@ -196,7 +194,6 @@ export default function Ticket({ ...props }) {
                 <Form.Item label="Статус" style={{ margin: 0 }}>
                   {/* {issue.status && issue.status.title} */}
                   <Select
-                    // onChange={value => props.setStatus(value)}
                     onChange={handleChangheStatus}
                     value={status}
                     disabled={disable}
@@ -242,18 +239,19 @@ export default function Ticket({ ...props }) {
               {issue.reported_by && issue.reported_by.first_name}{' '}
               {issue.reported_by && issue.reported_by.last_name}
             </Form.Item>
-            <Form.Item label="Исполнители" style={{ margin: 0 }}>
-            <Select 
+            <Form.Item label="Исполнители" style={{ margin: 0, width: '400px' }}>
+              <Select
                 value={assign}
                 onChange={handleChangheAssign}
                 disabled={disable}
+                style={{ width: '300px' }}
               >
                 {assignees.map(assign => (
-                  <Option  key={assign.id} value={assign.id}>
+                  <Option key={`${assign.id}`} value={assign.id}>
                     {assign.first_name} {assign.last_name}
                   </Option>
                 ))}
-            </Select>
+              </Select>
             </Form.Item>
 
             <Form.Item label="Создано" style={{ margin: 0 }}>

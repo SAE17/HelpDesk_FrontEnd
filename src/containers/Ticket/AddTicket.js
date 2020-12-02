@@ -33,7 +33,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
     const [service, setService] = React.useState('')
     const [claims, setClaims] = React.useState({})
 
-    
+
     const templates = {
         classic: '',
         paymentsTemplate: {
@@ -103,7 +103,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
 
     const handleRemove = key => {
         setClaims(old => {
-            const copy = {...old }
+            const copy = { ...old }
             delete copy[key]
             return copy
         })
@@ -111,7 +111,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
 
     const handleAddClaim = () => {
         setClaims(old => {
-            const copy = {...old, [nanoid()]: { key: '', value: '' } }
+            const copy = { ...old, [nanoid()]: { key: '', value: '' } }
             return copy
         })
     }
@@ -126,7 +126,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
     const handleEdit = (claimRow, claimCell) => event => {
         const { value } = event.target
         setClaims(old => {
-            const copy = {...old }
+            const copy = { ...old }
             copy[claimRow][claimCell] = value
             return copy
         })
@@ -134,7 +134,7 @@ function AddTicket({ visibleOpenTicket, ...props }) {
     const handleEditTemplate = (claimRow, claimCell) => event => {
         const { value } = event.target
         setTemplate(old => {
-            const copy = {...old }
+            const copy = { ...old }
             copy[claimRow][claimCell] = value
             return copy
         })
@@ -224,8 +224,8 @@ function AddTicket({ visibleOpenTicket, ...props }) {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data.categories)
-                    Array.isArray(data.categories)?
-                        setCategories(data.categories):
+                    Array.isArray(data.categories) ?
+                        setCategories(data.categories) :
                         console.log('error')
                 })
                 .catch(err => {
@@ -237,8 +237,8 @@ function AddTicket({ visibleOpenTicket, ...props }) {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data.services)
-                    Array.isArray(data.services)?
-                        setServices(data.services):
+                    Array.isArray(data.services) ?
+                        setServices(data.services) :
                         console.log('error')
                 })
                 .catch(err => {
@@ -254,13 +254,28 @@ function AddTicket({ visibleOpenTicket, ...props }) {
         getSubCategories()
         getCategories()
         getServices()
+        return () => {
+            clearState()
+        }
     }, [])
 
     const clearState = () => {
-        // TODO: почистить стейты
-
+        setAssignees([])
+        setTitle('')
+        setType(1)
+        setPriority('P4')
+        setCity('')
+        setFault('')
+        setSubcategory('')
+        setCategory('')
+        setDescription('')
+        setIsPassing('false')
+        setService('')
+        setClaims({})
+        setUsers([])
+        handleChangeTemplate('classic')
     }
-    const handleAddTicket = ({...props }) => {
+    const handleAddTicket = ({ ...props }) => {
         const copy = Object.assign(claims, template)
 
         const copyValues = Object.values(copy)
@@ -313,17 +328,17 @@ function AddTicket({ visibleOpenTicket, ...props }) {
         }
 
         axios({
-                method: 'post',
-                url: '/api/1.0/issues',
-                data: {
-                    assignees,
-                    title,
-                    type_id: type,
-                    priority_id: priority,
-                    description,
-                    claims: copyValues,
-                },
-            })
+            method: 'post',
+            url: '/api/1.0/issues',
+            data: {
+                assignees,
+                title,
+                type_id: type,
+                priority_id: priority,
+                description,
+                claims: copyValues,
+            },
+        })
             .then(response => {
                 console.log('ok')
                 const id = response.data.issue.id
@@ -332,77 +347,77 @@ function AddTicket({ visibleOpenTicket, ...props }) {
                 history.push(`/ticket/${id}`)
             })
 
-        .catch(err => {
-            console.log(err)
-        })
+            .catch(err => {
+                console.log(err)
+            })
         handleClose()
-            // history.push('/ticket')
+        // history.push('/ticket')
     }
 
-    return ( 
-    <div>
-        <
-        Modal visible = { visibleOpenTicket }
-        title = "Добавление заявки"
-        onOk = { handleClose }
-        onCancel = { handleClose }
-        centered footer = {
-            [ <Button key = "back"
-                onClick = { handleClose } >
-                Отмена 
+    return (
+        <div>
+            <
+                Modal visible={visibleOpenTicket}
+                title="Добавление заявки"
+                onOk={handleClose}
+                onCancel={handleClose}
+                centered footer={
+                    [<Button key="back"
+                        onClick={handleClose} >
+                        Отмена
             </Button>,
-                <Button
-                key = "submit"
-                type = "primary"
-                // loading={loading}
-                onClick = { handleAddTicket }
-                disabled = {!title || title === ' ' } >
-                Добавить </Button>,
-            ]
-        }>
-        
-        <AddTicketForm template = { template }
-        handleChangeTemplate = { handleChangeTemplate }
-        selectedTemplate = { selectedTemplate }
-        priorities = { priorities }
-        cities = { cities }
-        faults = { faults }
-        users = { users }
-        types = { types }
-        assignees = { assignees }
-        subcategories={subcategories}
-        setAssignees = { setAssignees }
-        title = { title }
-        setTitle = { setTitle }
-        type = { type }
-        setType = { setType }
-        priority = { priority }
-        setPriority = { setPriority }
-        city = { city }
-        setCity = { setCity }
-        fault = { fault }
-        setFault = { setFault }
-        description = { description }
-        setDescription = { setDescription }
-        claims = { claims }
-        handleRemove = { handleRemove }
-        handleSubmit = { handleSubmit }
-        handleEdit = { handleEdit }
-        handleEditTemplate = { handleEditTemplate }
-        handleAdd = { handleAddClaim }
-        isPassing = { isPassing }
-        setIsPassing = { setIsPassingHandle }
-        subcategory = { subcategory }
-        setSubcategory = { setSubcategory }
-        category = {category}
-        setCategory = {setCategory}
-        categories={categories}
-        setService = {setService}
-        services={services}
-        service={service}>
-        </AddTicketForm> 
-        </Modal > 
-    </div>
+                    <Button
+                        key="submit"
+                        type="primary"
+                        // loading={loading}
+                        onClick={handleAddTicket}
+                        disabled={!title || title === ' '} >
+                        Добавить </Button>,
+                    ]
+                }>
+
+                <AddTicketForm template={template}
+                    handleChangeTemplate={handleChangeTemplate}
+                    selectedTemplate={selectedTemplate}
+                    priorities={priorities}
+                    cities={cities}
+                    faults={faults}
+                    users={users}
+                    types={types}
+                    assignees={assignees}
+                    subcategories={subcategories}
+                    setAssignees={setAssignees}
+                    title={title}
+                    setTitle={setTitle}
+                    type={type}
+                    setType={setType}
+                    priority={priority}
+                    setPriority={setPriority}
+                    city={city}
+                    setCity={setCity}
+                    fault={fault}
+                    setFault={setFault}
+                    description={description}
+                    setDescription={setDescription}
+                    claims={claims}
+                    handleRemove={handleRemove}
+                    handleSubmit={handleSubmit}
+                    handleEdit={handleEdit}
+                    handleEditTemplate={handleEditTemplate}
+                    handleAdd={handleAddClaim}
+                    isPassing={isPassing}
+                    setIsPassing={setIsPassingHandle}
+                    subcategory={subcategory}
+                    setSubcategory={setSubcategory}
+                    category={category}
+                    setCategory={setCategory}
+                    categories={categories}
+                    setService={setService}
+                    services={services}
+                    service={service}>
+                </AddTicketForm>
+            </Modal >
+        </div>
     )
 }
 export default AddTicket
